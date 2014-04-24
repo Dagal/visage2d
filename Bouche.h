@@ -1,13 +1,21 @@
-#ifndef BOUCHE_H
+﻿#ifndef BOUCHE_H
 #define BOUCHE_H
 
 #include <QGraphicsItem>
+#include <QPainter>
 
 class Bouche : public QGraphicsItem
 {
-  Q_OBJECT
+private:
+  QPen* m_pen;
+
 public:
-  explicit Bouche(QObject *parent = 0);
+  explicit Bouche(QGraphicsItem *parent = 0);
+  QRectF boundingRect() const;
+  void paint(QPainter *painter,
+             const QStyleOptionGraphicsItem *option,
+             QWidget *widget);
+  void setPen(QPen* pen);
 
 signals:
 

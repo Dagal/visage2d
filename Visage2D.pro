@@ -12,9 +12,16 @@ TARGET = Visage2D
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        MainWindow.cpp
+SOURCES += main.cpp \
+    Visage.cpp \
+    Oeuil.cpp \
+    Nez.cpp \
+    Bouche.cpp
 
-HEADERS  += MainWindow.h
+HEADERS  += \
+    Visage.h \
+    Oeuil.h \
+    Nez.h \
+    Bouche.h
 
-FORMS    += MainWindow.ui
+FORMS    +=
