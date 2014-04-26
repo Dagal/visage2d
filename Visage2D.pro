@@ -16,12 +16,18 @@ SOURCES += main.cpp \
     Visage.cpp \
     Oeuil.cpp \
     Nez.cpp \
-    Bouche.cpp
+    Bouche.cpp \
+    BaseItem.cpp \
+    FaceScene.cpp \
+    FaceView.cpp
 
 HEADERS  += \
     Visage.h \
     Oeuil.h \
     Nez.h \
-    Bouche.h
+    Bouche.h \
+    BaseItem.h \
+    FaceScene.h \
+    FaceView.h
 
 FORMS    +=

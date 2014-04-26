@@ -1,11 +1,12 @@
 ﻿#ifndef BOUCHE_H
 #define BOUCHE_H
 
-#include <QGraphicsItem>
-#include <QPainter>
+#include "BaseItem.h"
 
-class Bouche : public QGraphicsItem
+class Bouche : public BaseItem
 {
+  Q_OBJECT
+
 private:
   QPen* m_pen;
 
